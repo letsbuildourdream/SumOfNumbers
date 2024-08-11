@@ -22,11 +22,15 @@ namespace SumOfNumbers
             int num2 = int.Parse(Console.ReadLine());
             int resultAdd = AddNumbers(num1, num2);
             int resultSubtract = SubtractNumbers(num1, num2);
-            Console.WriteLine("The sum of " + num1 + " and " + num2 + " is: " + resultAdd);
 
-            //Second Change of subtracting statement 
-            Console.WriteLine("The difference between " + num1 + " and " + num2 + " is: " + resultSubtract);
+            /* Console.WriteLine($"The sum of {num1} and {num2} is: {resultAdd}");
 
+             //Second Change of subtracting statement 
+             Console.WriteLine($"The difference between {num1} and {num2} is: {resultSubtract}");*/
+
+            //modify the Console.WriteLine statements to use string interpolation.
+            Console.WriteLine($"The sum of {num1} and {num2} is: {resultAdd}");
+            Console.WriteLine($"The difference between {num1} and {num2} is: {resultSubtract}");
         }
 
         static int AddNumbers(int a, int b)
