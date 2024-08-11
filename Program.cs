@@ -10,10 +10,19 @@ namespace SumOfNumbers
     {
         static void Main(string[] args)
         {
-            int num1 = 5;
-            int num2 = 10;
+            /* int num1 = 5;
+             int num2 = 10;
+             int result = AddNumbers(num1, num2);
+             Console.WriteLine("The sum of " + num1 + " and " + num2 + " is: " + result);*/
+
+            //First Change of adding user Input
+            Console.Write("Enter the first number: ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int num2 = int.Parse(Console.ReadLine());
             int result = AddNumbers(num1, num2);
             Console.WriteLine("The sum of " + num1 + " and " + num2 + " is: " + result);
+
         }
 
         static int AddNumbers(int a, int b)
