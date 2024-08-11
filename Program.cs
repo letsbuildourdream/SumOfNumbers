@@ -20,14 +20,23 @@ namespace SumOfNumbers
             int num1 = int.Parse(Console.ReadLine());
             Console.Write("Enter the second number: ");
             int num2 = int.Parse(Console.ReadLine());
-            int result = AddNumbers(num1, num2);
-            Console.WriteLine("The sum of " + num1 + " and " + num2 + " is: " + result);
+            int resultAdd = AddNumbers(num1, num2);
+            int resultSubtract = SubtractNumbers(num1, num2);
+            Console.WriteLine("The sum of " + num1 + " and " + num2 + " is: " + resultAdd);
+
+            //Second Change of subtracting statement 
+            Console.WriteLine("The difference between " + num1 + " and " + num2 + " is: " + resultSubtract);
 
         }
 
         static int AddNumbers(int a, int b)
         {
             return a + b;
+        }
+        //Second Change of subtracting function 
+        static int SubtractNumbers(int a, int b)
+        {
+            return a - b;
         }
     }
 }
